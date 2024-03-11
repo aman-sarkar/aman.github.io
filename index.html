@@ -38,7 +38,7 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
+        <section class="masthead bg-primary text-white text-center page-section" id="page-top">
             <div class="container d-flex align-items-center flex-column typewriter">
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
@@ -53,7 +53,7 @@
                 <!-- Masthead Subheading-->
                 <p class="masthead-subheading font-weight-light mb-0">Engineer Working @ Cisco</p>
             </div>
-        </header>
+        </section>
         <!-- About Section-->
         <section class="page-section text-white mb-0" id="about">
             <div class="container">
@@ -278,14 +278,26 @@
                 </div>
                 <!-- Hobbies Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto align-items-center">
-                        
+                    <div class="col-lg-4 ms-auto hob">
+                        <ul>
+                            <li>Singing</li>
+                            <li>Competitive Programming</li>
+                            <li>Cooking</li>
+                        </ul>
                     </div>
-                    <div class="col-lg-4 ms-auto align-items-center">
-                        
+                    <div class="col-lg-4 ms-auto hob">
+                        <ul>
+                            <li>Cricket</li>
+                            <li>Bike Riding</li>
+                            <li>Badminton</li>
+                        </ul>
                     </div>
-                    <div class="col-lg-4 ms-auto align-items-center">
-                        
+                    <div class="col-lg-4 ms-auto hob">
+                        <ul>
+                            <li>Sketching</li>
+                            <li>Watching Movies</li>
+                            <li>Gym</li>
+                        </ul>
                     </div>
                 </div>
                 
@@ -306,7 +318,7 @@
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <form id="contactForm" data-sb-form-api-token="bd73e025-a676-4e97-8248-16ef5bb738c9">
+                        <form id="contactForm">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
@@ -322,9 +334,9 @@
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                <input class="form-control" id="subject" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Subject</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A subject is required.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
@@ -347,7 +359,7 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
                         </form>
                     </div>
                 </div>

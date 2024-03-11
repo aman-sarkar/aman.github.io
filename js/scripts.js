@@ -50,3 +50,17 @@ var age = Math.abs(year - 1970);
       
 document.getElementById("age").innerHTML = "Age: "+age;  
 
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+    
+    var mailtoLink = "mailto:amansarkar199@gmail.com" + 
+                    "?subject=" + encodeURIComponent(subject) +
+                    "&body=" + encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nMessage: " + message);
+    
+    window.location.href = mailtoLink;
+});

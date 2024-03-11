@@ -11414,3 +11414,17 @@ left: 0;
 .card-cert:hover>div {
   opacity: 0;
 }
+
+.hob{
+  text-align: center;
+}
+
+.hob ul{
+  display: inline-block;
+  font-size: 25px;
+  list-style-type: none;
+}
+
+.hob ul li{
+  margin-bottom: 20px;
+}
